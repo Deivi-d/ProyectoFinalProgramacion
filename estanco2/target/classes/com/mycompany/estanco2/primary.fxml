@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="505.0" style="-fx-background-color: #c51d34;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.estanco2.PrimaryController">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="304.0" prefWidth="256.0" style="-fx-background-color: #5dc1b9;">
+         <children>
+            <ImageView fx:id="imgUser" fitHeight="39.0" fitWidth="44.0" layoutX="29.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgPass" fitHeight="53.0" fitWidth="69.0" layoutX="22.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="14.0" prefHeight="53.0" prefWidth="250.0" text="INICIAR SESIÓN">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Pane layoutX="13.0" layoutY="42.0" prefHeight="4.0" prefWidth="227.0" style="-fx-background-color: #a43b3b;" />
+            <Button fx:id="btnlogin" layoutX="70.0" layoutY="218.0" mnemonicParsing="false" onAction="#login" prefHeight="11.0" prefWidth="117.0" style="-fx-background-color: #a43b3b;" text="ACCEDER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalir" layoutX="14.0" layoutY="266.0" mnemonicParsing="false" onAction="#salir" style="-fx-background-color: #a43b3b;" text="Salir">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <TextField fx:id="user" layoutX="73.0" layoutY="88.0" prefHeight="39.0" prefWidth="164.0" promptText="Usuario " style="-fx-background-color: #a43b3b;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pass" layoutX="74.0" layoutY="152.0" prefHeight="39.0" prefWidth="164.0" promptText="Password" style="-fx-background-color: #a43b3b;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Circle fill="#a43b3b" layoutX="382.0" layoutY="152.0" radius="117.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="imglogo" fitHeight="148.0" fitWidth="143.0" layoutX="311.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="329.0" layoutY="185.0" text="MONKEY">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="221.0" text="SMOKE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
